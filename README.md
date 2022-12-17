@@ -16,11 +16,14 @@ http://localhost:8080/graphiql
 
 
 #Query example test in GragphiQL
+
 query{
+
     findAllDogs{id name breed origin}
 }
 
 {
+
     findDogById(id: 5) {
     id
     name
@@ -29,10 +32,12 @@ query{
 
 # Mutation GraphQL example
 mutation{
+
     deleteDogBreed(breed:"Pomeranian")
 }
 
 mutation{
+
     updateDogName(newName:"Akhilesh" id:3) {
         id
         name
